@@ -1,0 +1,60 @@
+.app-download {
+  margin: auto;
+  margin-top: 100px;
+  font-size: max(3vw, 20px);
+  text-align: center;
+  font-weight: 500;
+  color: #333;
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  max-width: 90%; /* Restrict width to avoid overflow */
+}
+
+.app-download p {
+  font-size: max(1vw, 24px);
+  font-weight: 600;
+  line-height: 1.5;
+  color: #e84393;
+}
+
+.app-download-platforms img {
+  height: 200px;
+  width: 420px;
+  max-width: 100%; /* Ensure images scale down */
+}
+
+/* 📱 Mobile Responsiveness */
+@media (max-width: 768px) {
+  .app-download {
+      padding: 20px; /* Reduce padding */
+      font-size: 18px; /* Adjust text size */
+      margin-top: 50px; /* Reduce top margin */
+  }
+
+  .app-download p {
+      font-size: 20px; /* Reduce font size for smaller screens */
+  }
+
+  .app-download-platforms img {
+      height: auto; /* Maintain aspect ratio */
+      width: 80%; /* Reduce image size */
+  }
+}
+
+@media (max-width: 480px) {
+  .app-download {
+      padding: 15px; /* Further reduce padding */
+      font-size: 16px;
+  }
+
+  .app-download p {
+      font-size: 18px;
+  }
+
+  .app-download-platforms img {
+      width: 100%; /* Make image full width */
+  }
+}

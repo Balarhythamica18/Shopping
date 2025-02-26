@@ -1,0 +1,515 @@
+/* Container for Cart Items */
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.cartitems {
+  max-width: 1400px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  /* Light background for the entire cart section */
+  border-radius: 12px;
+
+}
+
+/* Flexbox Grid for Cart Items */
+.cartitems-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  /* Ensures responsiveness on small screens */
+}
+
+.discount-amount {
+  color: #eb4d4b;
+}
+
+.discount-message {
+  background-color: #e6f7ff;
+  /* Light blue background */
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.message-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1a73e8;
+  /* Blue text for visibility */
+}
+
+.discount-message p {
+  margin: 0;
+  padding: 0;
+}
+
+.discount-message p:first-child {
+  font-size: 18px;
+  font-weight: bold;
+  color: #28a745;
+  /* Green color for positive messages */
+}
+
+.discount-message p:last-child {
+  font-size: 16px;
+  color: #666;
+  /* Grey color for secondary text */
+}
+.order-greet .span{
+  color:#FF69B4;
+}
+
+
+/* Styling for Individual Sections: Cart Details, Bill Details, and Payment Options */
+.cart-details,
+.bill-details {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  width: 48%;
+  /* Ensures even spacing in grid */
+  height: fit-content;
+  /* Adjusts height based on content */
+}
+
+/* Hover Effect to Elevate Cards */
+.cart-details:hover,
+.bill-details:hover,
+.payment-options:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Styling for Sections */
+.cart-details h2,
+.bill-details h2,
+.payment-options h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #ff4c92;
+  font-weight: 600;
+}
+
+/* Cart Item Styling */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Section (Cart Item Details) */
+.cart-left {
+  flex: 1;
+  padding: 10px 0;
+}
+
+.cart-left h2 {
+  font-size: 15;
+  color: #130f40;
+  font-weight: bold;
+
+}
+
+.cart-left p {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Quantity Controls */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.quantity-controls button {
+  padding: 8px 14px;
+  background-color: #FF69B4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.quantity-controls button:hover {
+  background-color: #ff4c92;
+}
+
+/* Right Section (Cart Item Action Buttons) */
+.cart-right {
+  display: flex;
+  align-items: center;
+}
+
+.free {
+  color: #22a6b3;
+  font-weight: bold;
+}
+
+.cart-right button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.cart-right img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Separator */
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 10px 0;
+}
+
+/* Bill Item Styling */
+.bill-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.bill-item p {
+  font-size: 1.1rem;
+  color: #555;
+  padding: 6px;
+}
+
+/* Total Pay Section */
+.total-to-pay {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.total-to-pay h3 {
+  color: #FF69B4;
+}
+
+
+/* Confirm Button Styling */
+.confirm {
+  padding: 12px 20px;
+  background-color: #FF69B4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.confirm:hover {
+  background-color: #ff4c92;
+}
+
+/* Empty Cart Section */
+.empty {
+  text-align: center;
+  padding: 20px;
+  background-color: #dfe4ea;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.empty-message {
+  font-size: 1.2rem;
+  padding: 5px;
+  color: #2f3542;
+}
+
+.empty-button {
+  margin-top: 10px;
+  padding: 12px 20px;
+  background-color: #FF69B4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.empty-button:hover {
+  background-color: #ff4c92;
+}
+
+/* Remove Default Link Styles */
+
+
+/* Remove default link styles */
+.add-item-link {
+  text-decoration: none;
+  /* Removes underline */
+  color: white;
+  /* Ensure the link's text is white */
+  display: inline-flex;
+  /* Makes the link behave like inline-flex for the button */
+  align-items: center;
+  /* Centers the icon and text vertically */
+  justify-content: center;
+  /* Ensures the content is centered */
+  width: 100%;
+  /* Ensures the link takes up the full width of the button */
+}
+
+/* Button Container for Cart Actions */
+.add-cart-remove-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+  padding: 10px;
+}
+
+i {
+  margin-right: 10px;
+}
+
+.add-cart-remove-buttons button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  /* Ensure the button uses flexbox for icon and text */
+  align-items: center;
+  /* Vertically center the content */
+  justify-content: center;
+  /* Horizontally center the content */
+}
+
+/* Add Item Button */
+.add-item-btn {
+  background-color: #4CAF50;
+}
+
+.add-item-btn:hover {
+  background-color: #45a049;
+  transform: translateY(-4px);
+}
+
+.add-item-btn:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+/* Clear Cart Button */
+.clear-cart-btn {
+  background-color: #e74c3c;
+}
+
+.clear-cart-btn:hover {
+  background-color: #c0392b;
+  transform: translateY(-4px);
+}
+
+.clear-cart-btn:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+.address {
+  margin: 10px 0px;
+}
+
+.from,
+.to {
+  padding: 10px;
+
+}
+
+.from-info,
+.to-info {
+  color: #a4b0be;
+}
+
+.payment-subheading {
+  padding: 5px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.payment-option input[type="radio"] {
+  margin-left: auto;
+  /* Pushes the radio button to the right */
+}
+
+.fa-google-pay {
+  color: #ff4757;
+}
+
+.fa-paypal {
+  color: #130f40;
+}
+
+.fa-amazon {
+  color: #FFC312;
+}
+
+.fa-credit-card {
+  color: #45aaf2;
+}
+
+.order-dialog {
+  text-align: center;
+}
+
+.order-image {
+  width: 80px;
+  height: auto;
+  margin: 0 auto 20px;
+}
+
+.Method{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.order-greet {
+
+  width: 100%;
+
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  color: #192a56 !important;
+}
+
+.Method {
+  color: #2f3542;
+  margin-bottom: 10px;
+}
+
+.fa-heart {
+  color: #ff4c92;
+}
+
+.random-greet {
+  color: #a4b0be;
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
+.random-greet span{
+  color: #a4b0be;
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
+
+.order-home a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}.clear-cart-dialog {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.clear-cart-dialog h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.clear-cart-dialog p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.dialog-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.dialog-buttons .yes-btn,
+.dialog-buttons .no-btn {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.dialog-buttons .yes-btn {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.dialog-buttons .yes-btn:hover {
+  background: #c0392b;
+}
+
+.dialog-buttons .no-btn {
+  background: #3498db;
+  color: #fff;
+}
+
+.dialog-buttons .no-btn:hover {
+  background: #2980b9;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cartitems-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cart-details,
+  .bill-details {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .add-cart-remove-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .add-cart-remove-buttons button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

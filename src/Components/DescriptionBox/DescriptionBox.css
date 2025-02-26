@@ -1,0 +1,80 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* DescriptionBox Container */
+  .descriptionbox {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 100%; /* Set a max-width for larger screens */
+    margin: 20px auto; /* Center container with margin */
+  }
+  
+  /* Navigator */
+  .descriptionbox-navigator {
+    display: flex;
+    border-bottom: 2px solid #ffb6c1; /* Light pink border */
+    margin-bottom: 20px;
+  }
+  
+  .descriptionbox-nav-box {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s, border-bottom 0.3s;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .descriptionbox-nav-box:hover,
+  .descriptionbox-nav-box.active {
+    color: #ff69b4; /* Pink color */
+    border-bottom: 3px solid #ff69b4; /* Pink color */
+  }
+  
+  .descriptionbox-nav-box.fade {
+    color: #999;
+    border-bottom: 3px solid transparent;
+  }
+  
+  /* Description Content */
+  .descriptionbox-description {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .descriptionbox-description p {
+    margin-bottom: 15px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .descriptionbox {
+      padding: 15px;
+      margin: 15px;
+    }
+  
+    .descriptionbox-navigator {
+      flex-direction: column;
+    }
+  
+    .descriptionbox-nav-box {
+      font-size: 1em;
+      padding: 8px;
+    }
+  
+    .descriptionbox-description {
+      font-size: 0.9em;
+    }
+  }
+  

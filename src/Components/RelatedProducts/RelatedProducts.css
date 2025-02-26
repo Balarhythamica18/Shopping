@@ -1,0 +1,72 @@
+/* RelatedProducts.css */
+
+.relatedproduct {
+    padding: 2rem;
+    background-color: #fff; /* Background color of the container */
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for a subtle lift effect */
+  }
+  
+  .relatedproduct h1 {
+    color: #e84393; /* Pink color for the heading */
+    font-size: 2rem; /* Larger font size for emphasis */
+    margin-bottom: 1rem; /* Space below the heading */
+    text-align: center; /* Center align the heading */
+  }
+  
+  .relatedproduct hr {
+    border: 0;
+    height: 1px;
+    background: #e84393; /* Pink color for the horizontal line */
+    margin: 0 auto 2rem auto; /* Center the line and add space below */
+    width: 50%; /* Make the line half the width of the container */
+  }
+  
+  .relatedproducts-item {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    gap: 1.5rem; /* Space between items */
+    justify-content: center; /* Center align items horizontally */
+  }
+  
+  .relatedproducts-item .item {
+    background-color: #fff; /* Background color of each item */
+    border-radius: 8px; /* Rounded corners for each item */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for a subtle lift effect */
+    overflow: hidden; /* Hide overflow to maintain rounded corners */
+    transition: transform 0.3s ease-in-out; /* Smooth scale transition on hover */
+    width: 200px; /* Fixed width for each item */
+  }
+  
+  .relatedproducts-item .item:hover {
+    transform: scale(1.05); /* Slightly enlarge the item on hover */
+  }
+  
+  .item img {
+    width: 100%; /* Full width for the image */
+    height: auto; /* Maintain aspect ratio of the image */
+    border-bottom: 1px solid #e84393; /* Pink border below the image */
+  }
+  
+  .item .item-info {
+    padding: 1rem; /* Padding inside the item info section */
+    text-align: center; /* Center align text */
+  }
+  
+  .item .item-info h2 {
+    font-size: 1.2rem; /* Slightly larger font size for the item name */
+    color: #333; /* Dark color for the item name */
+    margin-bottom: 0.5rem; /* Space below the item name */
+  }
+  
+  .item .item-info .price {
+    color: #e84393; /* Pink color for the price */
+    font-size: 1rem; /* Font size for the price */
+  }
+  
+  .item .item-info .old-price {
+    color: #aaa; /* Light gray color for the old price */
+    text-decoration: line-through; /* Strikethrough old price */
+    font-size: 0.9rem; /* Slightly smaller font size for the old price */
+  }
+  

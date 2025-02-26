@@ -1,0 +1,420 @@
+.payment-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap:20px;
+  }
+  
+  .payment-left {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  .total-heading {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .total-amount {
+    font-size: 36px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 30px;
+  }
+  
+  .total-amount-value {
+    font-size: 40px;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .payment-items-list {
+    margin-top: 30px;
+  }
+  
+  .payment-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fafafa;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .payment-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .payment-item-details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .payment-item-info {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .payment-item-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .payment-item-quantity {
+    margin-top: 5px;
+    color: #777;
+  }
+  
+  
+  .no-items-message {
+    font-size: 16px;
+    color: #888;
+    text-align: center;
+    font-style: italic;
+  }
+  
+  .payment-right {
+    width: 30%;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .payment-details-heading {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .payment-username {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 25px;
+  }
+  
+  .payment-details-heading,
+  .payment-username {
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  .payment-right {
+    width:100%;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .payment-details-heading {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  .card-detail {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+  
+  input[type="text"] {
+    font-size: 16px;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f7f7f7;
+    color: #333;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  input[type="text"]::placeholder {
+    color: #999;
+  }
+  
+  .card-information {
+    margin-bottom: 20px;
+  }
+  
+  .card-month {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card-month input {
+    width: 48%;
+  }
+  
+  .card-name,
+  .country {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:active {
+    background-color: #004085;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  .card-detail .country input {
+    width: 100%;
+  }
+  
+  .card-detail .card-information label,
+  .card-detail .card-name label,
+  .card-detail .country label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 6px;
+  }
+  
+  .card-month input {
+    width: 48%;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f7f7f7;
+    color: #333;
+    transition: border-color 0.3s ease;
+  }
+  
+  .card-month input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .card-detail .card-name input,
+  .card-detail .country input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  .card-name input:focus,
+  .country input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  select {
+    font-size: 16px;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f7f7f7;
+    color: #333;
+    width: 100%;
+    transition: border-color 0.3s ease;
+  }
+  
+  select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  .card-input-container {
+  position: relative;
+}
+
+.card-input-container input {
+  padding-right: 50px;
+}
+
+  .mastercard-icon {
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 80px;
+    height: 25px;
+  }
+  .pay-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pay-button:disabled {
+    background-color: #d6d6d6;
+    cursor: not-allowed;
+  }
+  
+  .pay-button.confirmed {
+    text-align: center;
+    background-color: #28a745; /* Green color for confirmation */
+  }
+  
+  .loading-container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  .spinner-icon {
+    margin-right: 10px;
+    animation: spin 1s infinite linear;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .confirmation-tick {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .check-icon {
+    margin-right: 8px;
+    font-size: 24px;
+  }
+
+  .payment-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .payment-modal .modal-content {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px; /* Maximum width for the modal */
+    text-align: center;
+  }
+  
+  .payment-modal .modal-content h3 {
+    color:#ff4c92 ; /* Green color for success */
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .payment-modal .modal-content p {
+    color: #555555;
+    font-size: 16px;
+   
+  }
+  .food-alert{
+    margin-bottom: 10px;
+    font-size: 14px !important;
+    color:grey !important;
+  }
+  .tracking-alert{
+    font-size: 15px !important;
+    color:black;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .payment-modal .modal-content button {
+    padding: 12px 30px;
+    margin-top: 10px;
+    background-color:#ff4c92;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .payment-modal .modal-content button:hover {
+    background-color:#ff6aa5; /* Darker green for hover effect */
+    transform: translateY(-2px); /* Slight raise effect on hover */
+  }
+  
+  .payment-modal .modal-content button:focus {
+    outline: none; /* Removes focus outline for cleaner design */
+  }
+  
+  @media (max-width: 600px) {
+    .modal-content {
+      padding: 20px 30px;
+      max-width: 90%;
+    }
+  
+    .modal-content h3 {
+      font-size: 20px;
+    }
+  
+    .modal-content p {
+      font-size: 14px;
+    }
+  
+    .modal-content button {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .payment-container{
+        flex-direction: column;
+    }
+  }  
